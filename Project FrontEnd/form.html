@@ -1,0 +1,53 @@
+<html>
+<head>
+<script type="text/javascript">
+
+function submit()
+{
+	document.write("<br> thank you!");
+}
+
+</script>
+</head>
+<body>
+<hr>
+<h1 style =" text-align:center; font-size:500% ;color:white; background-color:darkblue"> FRESNO STATE ALUMNI </h1></hr>
+
+<h3 style =" text-align:center; font-size:200% ;color:black;"> ALUMNI FORM </h3>
+
+
+
+
+<form align =center id="form1" >
+  	First name:<input type="text" name="firstname" required><br><br>
+  	Last name:<input type="text" name="lastname" required><br><br>
+	Gender:<input type="radio" name="sex"value="male" checked>Male
+		<input type="radio" name="sex" value="female">Female<br><br>
+	Email ID:<input type="email" value="email"><br><br>
+	Phone:	<input type="tel" name="usrtel" required><br><br>
+	Degree Type:<select name="Degree Type" required>
+  	<option value="Masters">Masters</option>
+  	<option value="Bachelors">Bachelors</option>
+  	<option value="Other">Other</option>
+  	<option value="PHD">PHD</option>
+	</select><br><br>
+	Graduation Year:<select name="Year" required>
+  	<option value="2005">2005</option>
+  	<option value="2006">2006</option>
+  	<option value="2007">2007</option>
+  	<option value="2008">2008</option>
+	<option value="2009">2009</option>
+	<option value="2010">2010</option>
+	<option value="2011">2011</option>
+	<option value="2012">2012</option>
+	<option value="2013">2013</option>
+	<option value="2014">2014</option>
+	<option value="2015">2015</option>
+	</select><br><br>
+	<button id="sub" onclick="submit();">submit</button>
+	
+	<input type="button" onclick="reset()" value="Reset">
+</form><br><br>
+
+</body>
+</html>
