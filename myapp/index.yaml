@@ -1,0 +1,6 @@
+indexes:
+- kind: Feed
+  ancestor: yes
+  properties:
+  - name: Date
+    direction: desc
