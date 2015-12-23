@@ -1,0 +1,51 @@
+<html>
+<head>
+<title> login </title>
+<center> 
+<h1 style= "color:white; background-color: blue;"> ALUMNI ASSOSIATION </h1><br>
+LOGIN
+</center>
+</head>
+<body>
+<span id="ajaxButton" style="cursor: pointer; text-decoration: underline">
+  About
+</span>
+
+<center>
+<font size="14">
+<input type="text" id="username" placeholder="Username"> <br>
+<input type="password" id="password" placeholder="Password"> <br>
+<input type="button" value="submit" onclick="mainfunc()">
+</font>
+</center>
+<script type ="text/javascript">
+    document.querySelector('#ajaxButton').onclick = function () {
+ document.write("This website is about ALUMNI ASSOCIATIONS ") 
+    };
+    var httpRequest = new XMLHttpRequest();
+    function makeRequest(url) {
+        // make the request
+        httpRequest.open('GET', url);
+        httpRequest.send();
+        // listen for the response
+        // call alertContents function after we receive server response
+        httpRequest.onreadystatechange = alertContents;
+    }
+    
+    function alertContents() {
+        if (httpRequest.readyState === 4) {
+            if (httpRequest.status === 200) {
+                alert(httpRequest.responseText);
+            } else {
+                alert('There was a problem with the request.');
+            }
+        }
+    }
+function mainfunc(){
+var user = document.getElementById('username');
+window.alert("you are logged on as " + user.value)
+window.open("file:///C:\Users\lokesh\Documents\GitHub\goworkspace\Project\alumni.html")
+}
+</script>
+</body>
+</html>
