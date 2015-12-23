@@ -1,0 +1,38 @@
+<html>
+<head>
+<script type="text/javascript">
+function mainfunc(){
+	var user = document.getElementById('username');
+	window.alert("you are logged on as " + user.value)
+	window.open("file://C:Users/lokesh/Documents/GitHub/goworkspace/src/Project/alumni.html")
+</script>
+</head>
+<body>
+<hr>
+<h1 style =" text-align:center; font-size:500% ;color:white; background-color:darkblue"> FRESNO STATE ALUMNI </h1></hr>
+
+<h3 style =" text-align:center; font-size:200% ;color:black;"> LOGIN </h3>
+
+<link rel="stylesheet" href="login.css">
+
+   
+<form method="POST" action="alumni">
+    
+   <i class="fa fa-user fa-5x"></i>
+     
+<input id="userName" name="userName" placeholder="Enter your user name">
+        
+<p class="form-field-err"></p>
+        
+<input id="password" name="password" type="password" placeholder="Enter your password">
+   
+     <p class="form-field-err"></p>
+ 
+	<input type="button" value="submit" onclick="mainfunc()"    
+     
+ </form>
+    
+<a href="/form/signup" id="create-account">Create account</a>
+
+</body>
+</html>
