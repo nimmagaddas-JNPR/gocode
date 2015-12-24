@@ -1,0 +1,3 @@
+Implemented server side functionality for form.html page in my project. The contents provided in the Form such as last name,first name, gender,email id,phone,degree and year are stored in the database using PHP code written in form.php file.
+
+The php code connects the form with the back end database.The details entered in form are stored in PHP database.
